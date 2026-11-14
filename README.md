@@ -36,7 +36,7 @@
 
 ## 配合 project-initializer skill
 
-看板只负责「看见」和「派发」。项目怎么建目录、需求怎么登记、什么时候算结项，交给 **project-initializer** skill 更合适。两者读写同一套 `management/` 文件，接上之后是一条完整的链路：
+看板只负责「看见」和「派发」。项目怎么建目录、需求怎么登记、什么时候算结项，交给 **[project-initializer](https://github.com/Selwiro/project-initializer)** skill 更合适。两者读写同一套 `management/` 文件，接上之后是一条完整的链路：
 
 1. **接入**：让智能体用 skill 初始化或接入项目，看板下次扫描就能看到它，不用手动添加。
 2. **登记**：有新需求时用 skill 登记，需求立刻变成看板上的待办任务。
@@ -45,7 +45,7 @@
 
 不开看板也行：skill 自带 `status`、`inspect`、`task` 命令，终端里就能查进度、核对结构、看单条任务。
 
-> 本仓库不包含这个 skill。先在 DSH 里装好并启用 **project-initializer**（Python 3.9+，只用标准库），两边配合才能闭环。
+> 本仓库不包含这个 skill。先在 DSH 里装好并启用 [project-initializer](https://github.com/Selwiro/project-initializer)（Python 3.9+，只用标准库），两边配合才能闭环。
 
 ## 智能体能用的工具
 
