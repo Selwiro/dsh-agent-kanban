@@ -1,0 +1,3 @@
+- insert:
+    - id: agent-kanban
+      name: dsh-agent-kanban

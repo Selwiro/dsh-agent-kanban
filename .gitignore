@@ -1,0 +1,28 @@
+# 依赖与构建产物
+node_modules/
+dist/
+coverage/
+
+# 运行期数据：包含本机绝对路径，不要提交
+roots.json
+.dsh/
+
+# 系统与编辑器
+.DS_Store
+._*
+Thumbs.db
+.idea/
+*.swp
+
+# 日志与本地环境
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+!.env.example
+
+# 打包产物
+*.tgz

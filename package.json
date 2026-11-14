@@ -1,0 +1,64 @@
+{
+  "name": "dsh-agent-kanban",
+  "version": "0.1.0",
+  "description": "自动扫描 DSH 工作区，汇总项目进度与任务；工作区外项目按需添加，任务可交给会话执行并由智能体回写。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "cordis",
+    "kanban",
+    "task-board",
+    "project-management",
+    "agent"
+  ],
+  "author": "Selwiro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Selwiro/dsh-agent-kanban.git"
+  },
+  "homepage": "https://github.com/Selwiro/dsh-agent-kanban#readme",
+  "bugs": {
+    "url": "https://github.com/Selwiro/dsh-agent-kanban/issues"
+  },
+  "icon": "icon.svg",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "lib",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.0-0 <0.3.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

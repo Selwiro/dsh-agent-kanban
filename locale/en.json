@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Agent kanban",
+    "description": "Scan DSH workspaces automatically, track project progress and tasks, and add outside directories only when needed. Hand a task to a session and let the agent write the result back.",
+    "detail": "docs/DETAIL.md"
+  }
+}
